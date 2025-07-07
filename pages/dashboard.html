@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .collapsed {
+            width: 100% !important;
+            flex: 1 1 15% !important;
+        }
+
+        .collapsed .hide-text {
+            display: block;
+        }
+    </style>
+
+    <title>Dashbaord</title>
+</head>
+
+<body>
+    <div class="flex w-full h-full">
+        <aside id="asideNav"
+            class="transition-all duration-300 ease-in-out flex-[0_0_4em] flex-col w-[5em] h-screen bg-[rgb(17,19,97)] flex items-center pt-10 gap-5">
+            <div class="flex flex-col h-max w-fit items-center justify-center">
+                <img src="../tools/Ellipse 6.png" alt="" class="w-[3em]">
+                <p class="hide-text hidden text-white text-[.8em] font-bold w-max">Udemy Inter. school</p>
+            </div>
+            <hr class="border-t border-dotted my-3 w-full">
+            <nav class="flex flex-col w-full h-max p-3 gap-2 ">
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 p-3 hover:bg-[#509CDB] bg-[#509CDB] rounded-[.6em]"
+                    id="dashboard">
+                    <iconify-icon icon="mdi:home" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Dashboard</a>
+                </span>
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 p-3 hover:bg-[#509CDB] rounded-[.6em]"
+                    id="teacher">
+                    <iconify-icon icon="mdi:teach" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Teachers</a>
+                </span>
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 p-3 hover:bg-[#509CDB] rounded-[.6em]"
+                    id="student">
+                    <iconify-icon icon="ri:graduation-cap-line" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Students/ classes</a>
+                </span>
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 pl-3 hover:bg-[#509CDB] rounded-[.6em]">
+                    <iconify-icon icon="hugeicons:bank" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Billing</a>
+                </span>
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 pl-3 hover:bg-[#509CDB] rounded-[.6em]">
+                    <iconify-icon icon="uil:setting" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Settings and profile</a>
+                </span>
+                <span
+                    class="nav-link flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 pl-3 hover:bg-[#509CDB] rounded-[.6em]">
+                    <iconify-icon icon="mage:chart-b" width="24" height="24"></iconify-icon>
+                    <a href="#" class="hide-text hidden decoration-non">Exams</a>
+                </span>
+            </nav>
+
+            <span
+                class="flex w-full text-white text-[.7em] font-bold items-center h-10 gap-4 pl-5 hover:bg-[#509CDB] rounded-[.6em]">
+                <iconify-icon icon="hugeicons:bank" width="24" height="24"></iconify-icon>
+                <a href="#" class="hide-text decoration-non hidden">Features</a>
+                <span
+                    class="hide-text w-max pt-1 pb-1 pr-[2em] pl-[2em] bg-[#B9D7F1] text-[.7em] font-bold rounded-[5em] text-zinc-900 hidden">NEW</span>
+            </span>
+            <div class="flex  items-end w-[20%] fixed right-[-5em] bottom-8">
+                <span
+                    class=" flex w-max bg-[rgb(17,19,97)] p-2 h-10 items-center w-32 rounded-full justify-between hover:bg-opacity-90">
+                    <span class="flex items-center">
+                        <iconify-icon icon="streamline-plump:customer-support-3" width="24" height="24"
+                            class="text-white"></iconify-icon>
+                        <a href="" class="text-[.7em] text-white">Suport</a>
+                    </span>
+                    <iconify-icon icon="lucide:chevron-up" width="24" height="24" class="text-white"></iconify-icon>
+                </span>
+            </div>
+        </aside>
+        <div class="flex flex-[1_1_85%] border flex-col w-full h-screen">
+            <header class="flex w-full h-[4em] p-3 items-center justify-between">
+                <iconify-icon icon="iconamoon:menu-burger-horizontal" width="24" height="24" id="humber"></iconify-icon>
+                <div class="flex flex-col w-fit h-9">
+                    <h4 class="text-[.8em]  font-bold">Learn how to launch faster</h4>
+                    <p class="w-fit text-[.6em]">watch our webinar for tips from our experts and get a limited time
+                        offer.</p>
+                </div>
+                <div class="flex w-[9em] justify-between items-center">
+                    <iconify-icon icon="mdi-light:bell" width="24" height="24"></iconify-icon>
+                    <button class="text-zinc-800 bg-[#509CDB] lg:text-zinc-100 
+                    text-[12px] px-4 py-1 rounded-[.4em] hover:bg-opacity-90" id="loginBtn">
+                        Log out
+                    </button>
+                </div>
+            </header>
+
+
+            <main class="flex flex-col  h-[calc(100vh-4em)] w-full">
+                <div class="flex w-full" id="dashboards">
+                    <div class="flex flex-col w-full h-full items-center pt-10">
+                        <div class="flex flex-col w-max text-center">
+                            <h2 class="text-[1.5em]">Welcome to your dashboard, Udemy school</h2>
+                            <p class="text-[.8em]">Uyo/school/@teachable.com</p>
+                        </div>
+                        <div class="flex flex-col h-full w-max  gap-3">
+                            <div
+                                class="flex w-fit h-max gap-[2em] hover:scale-[.975] bg-gray-200 p-[1em] rounded-[.7em]">
+                                <span class="flex items-center justify-center h-8 w-8 bg-[#EFF3FA] rounded-full">
+                                    <iconify-icon icon="mynaui:user-x-solid" width="24" height="24"></iconify-icon>
+                                </span>
+                                <div class="flex flex-col h-[5em] w-full justify-between">
+                                    <h1 class="text-[1.7] font-bold text-zinc-600">Add other admins </h1>
+                                    <p class="text-[.9em]">
+                                        Create rich course content and coaching products for your students. <br>
+                                        When you give them a pricing plan, they’ll appear on your site!
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex w-fit h-max gap-[2em] hover:scale-[.975] bg-gray-200 p-[1em] rounded-[.7em]">
+                                <span class="flex items-center justify-center h-8 w-8 bg-[#EFF3FA] rounded-full">
+                                     <iconify-icon icon="mdi:teach" width="24" height="24"></iconify-icon>
+                                </span>
+                                <div class="flex flex-col h-[5em] w-full justify-between">
+                                    <h1 class="text-[1.7] font-bold text-zinc-600">Add teacher</h1>
+                                    <p class="text-[.9em]">
+                                        Create rich course content and coaching products for your students. <br>
+                                        When you give them a pricing plan, they’ll appear on your site!
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex w-fit h-max gap-[2em] hover:scale-[.975] bg-gray-200 p-[1em] rounded-[.7em]">
+                                <span class="flex items-center justify-center h-8 w-8 bg-[#EFF3FA] rounded-full">
+                                    <iconify-icon icon="ri:graduation-cap-line" width="24" height="24"></iconify-icon>
+                                </span>
+                                <div class="flex flex-col h-[5em] w-full justify-between">
+                                    <h1 class="text-[1.7] font-bold text-zinc-600">Add students</h1>
+                                    <p class="text-[.9em]">
+                                        Create rich course content and coaching products for your students. <br>
+                                        When you give them a pricing plan, they’ll appear on your site!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="h-full w-full hidden" id="teachers">
+                    <div class="Teachers flex flex-col w-full px-4 justify-between items-center">
+                        <div class="flex w-full h-10 items-center justify-between">
+                            <h2 class="text-[1em] font-bold">
+                                Teachers
+                            </h2>
+                            <div class="flex w-max h-max items-center justify-between gap-4 text-[.8em]">
+                                <button class="text-[#2671B1] h-max w-fit">Export CSV</button>
+                                <button class="text-zinc-800 bg-[#509CDB] lg:text-zinc-100 
+                        text-[9px] px-4 py-2 rounded-[.4em] hover:bg-opacity-90" id="AddTeacherBtn">
+                                    Add Teachers
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-[calc(100vh-10em)] w-full items-center px-4 pt-4 justify-between">
+                            <div class="flex w-full gap-10">
+                                <select name="filter" id="" class="flex items-center text-zinc-500 w-[7em]">
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                </select>
+                                <span class="flex w-full h-[3em] items-center">
+                                    <span class="flex items-center justify-center w-[3em] h-full">
+                                        <iconify-icon icon="ic:baseline-search" width="21" height="21"
+                                            class="text-zinc-500"></iconify-icon>
+                                    </span>
+                                    <input type="text" placeholder="Search for a student by name or email"
+                                        class="outline-none h-full w-full text-zinc-500">
+                                </span>
+                            </div>
+                            <div class="flex flex-col h-full justify-center items-center w-full">
+                                <div class="flex flex-col w-full h-max items-center">
+                                    <h2 class="text-zinc-500 text-[2em]">No Teachers at this time</h2>
+                                    <p class="text-zinc-500 text-[.9em]">Teachers will appear here after they enroll in
+                                        your school.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="flex fixed w-screen h-screen items-center justify-center bg-[rgb(252,250,250)] top-0 hidden z-30 bg-black/60" id="addTeachers"> -->
+
+                </div>
+
+                <!-- students -->
+
+                <div class="flex flex-col w-full hidden" id="students">
+                    <div class="students flex flex-col w-full px-4 justify-center items-center">
+                        <div class="flex w-full h-10 items-center justify-between">
+                            <h2 class="text-[1em] font-bold">
+                                Students
+                            </h2>
+                            <div class="flex w-max h-max items-center justify-between gap-4 text-[.8em]">
+                                <button class="text-[#2671B1] h-max w-fit">Export CSV</button>
+                                <button class="text-zinc-800 bg-[#509CDB] lg:text-zinc-100 
+                        text-[9px] px-4 py-2 rounded-[.4em] hover:bg-opacity-90" id="AddStudentBtn">
+                                    Add Student
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col h-full w-[90%] items-center px-4 pt-4 justify-between">
+                            <div class="flex w-full h-max gap-12">
+                                <select name="filter" id="" class="flex items-center text-zinc-500 w-[7em]">
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                    <option value="Add filter">Add filter</option>
+                                </select>
+                                <span class="flex w-full h-[3em] bg-[#E0E0E0] items-center rounded-[.2em]">
+                                    <span class="flex items-center justify-center w-[3em] h-full">
+                                        <iconify-icon icon="ic:baseline-search" width="21" height="21"
+                                            class="text-zinc-500"></iconify-icon>
+                                    </span>
+                                    <input type="text" placeholder="Search for a student by name or email"
+                                        class="outline-none h-full w-full text-zinc-500 bg-transparent">
+                                </span>
+                            </div>
+                            <p class="w-full h-max py-1 px-3" id="numberOfStudents"></p>
+                            <div class="flex flex-col w-full max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100" id="studentsList">
+                                <!-- Student cards will appear here and scroll if overflowed -->
+                            </div>
+
+                            <div class="flex flex-col h-max w-full" id="noStudents">
+                                <div class="flex w-full h-max justify-center">
+                                    <img src="../tools/no notification.png" alt="" class="h-full w-max">
+                                </div>
+
+                                <div class="flex flex-col w-full h-max items-center">
+                                    <h2 class="text-zinc-500 text-[2em]">No students at this time</h2>
+                                    <p class="text-zinc-500 text-[.9em]">Students will appear here after they enroll in
+                                        your school.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+
+        </div>
+
+
+        <div id="addTeachers"
+            class="h-screen w-full hidden flex  flex-col justify-center items-center fixed top-0 bg-black/60">
+            <div class="modal-content mx-auto w-full max-w-[70%] h-max border flex flex-col py-8 px-5 gap-8  bg-[#FFFFFF]">
+                <h2 class="text-zinc-500 text-[1.6em]">Add Teachers</h2>
+                <span class="flex w-[14em] justify-between h-max">
+                    <p class="text-zinc-500 text-[.8em]">Manually</p>
+                    <p class="text-zinc-500 text-[.8em]">Import CSV</p>
+                </span>
+                <div class="flex gap-4 w-full items-center justify-between">
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Name</label>
+                        <input type="text" placeholder="Enter the name of admin"
+                            class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="">
+                    </span>
+                    <span class=" flex flex-col w-full">
+                        <label for="Class" class="text-zinc-500">Class</label>
+                        <span class=" flex flex-col border border-zinc-300 pr-[5em] pl-3 py-2 rounded">
+                            <select name="Class" id="Class" class="w-[8em] outline-none text-zinc-500">
+                                <option value="Class">Class</option>
+                                <option value="Class">Jss1</option>
+                                <option value="Class">Jss2</option>
+                                <option value="Class">Jss3</option>
+                                <option value="Class">Ss1</option>
+                                <option value="Class">Ss2</option>
+                                <option value="Class">Ss3</option>
+                            </select>
+                        </span>
+                    </span>
+                    <span class=" flex flex-col w-full">
+                        <label for="Gender" class="text-zinc-500">Gender</label>
+                        <span class=" flex flex-col border border-zinc-300 pr-[5em] pl-3 py-2 rounded">
+                            <select name="Gender" id="Gender" class="w-[8em] outline-none text-zinc-500">
+                                <option value="Gender">Gender</option>
+                                <option value="Gender">Male</option>
+                                <option value="Gender">Female</option>
+                            </select>
+                        </span>
+                    </span>
+                </div>
+                <div class="flex items-centerc gap-[9em]">
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Name</label>
+                        <input type="text" placeholder="Enter the name of admin"
+                            class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="">
+                    </span>
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Phone Number</label>
+                        <input type="tel" pattern="[0-9]+" title="Only numbers allowed"
+                            class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="nae">
+                    </span>
+                </div>
+                <div class="w-full">
+                    <span class="flex flex-col w-full">
+                        <label for="password" class="text-zinc-500">Password</label>
+                        <input type="text" placeholder="Enter the name of admin"
+                            class="w-[40%] px-3 py-2 border rounded outline-none text-zinc-500" id="pasword">
+                    </span>
+                </div>
+                <div class="flex justify-end w-[100%] gap-8">
+                    <button class="text-zinc-500 bg-[#F1F1F1] py-2 px-4 rounded hover:bg-opacity-90 font-bold" id="techerCancel">
+                        Cancel
+                    </button>
+                    <button class="bg-[#F1F1F1] py-2 px-4 rounded hover:bg-opacity-90 bg-blue-600 text-white">
+                        Add Teacher
+                    </button>
+                </div>
+            </div>
+        </div>
+
+            
+        <div  id="addStudents"
+            class="h-screen w-full hidden flex  flex-col justify-center items-center fixed top-0 bg-black/60">
+            <div class="modal-content w-full max-w-[70%] h-max border flex flex-col py-8 px-5 gap-8  bg-[#FFFFFF] z-40">
+                <h2 class="text-zinc-500 text-[1.6em]">Add Students</h2>
+                <span class="flex w-[14em] justify-between h-max">
+                    <p class="text-zinc-500 text-[.8em]">Manually</p>
+                    <p class="text-zinc-500 text-[.8em]">Import CSV</p>
+                </span>
+                <div class="flex gap-4 w-full items-center justify-between">
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Name</label>
+                        <input type="text" placeholder="Enter the name of student" class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="name">
+                    </span>
+                    <span class=" flex flex-col w-full">
+                        <label for="Class" class="text-zinc-500">Class</label>
+                        <span class=" flex flex-col border border-zinc-300 pr-[5em] pl-3 py-2 rounded">
+                            <select name="Class" id="class" class="w-[8em] outline-none text-zinc-500">
+                                <option value="Class">Class</option>
+                                <option value="Jss1">Jss1</option>
+                                <option value="Jss2">Jss2</option>
+                                <option value="Jss3">Jss3</option>
+                                <option value="Ss1">Ss1</option>
+                                <option value="Ss2">Ss2</option>
+                                <option value="Ss3">Ss3</option>
+                            </select>
+                        </span>
+                    </span>
+                    <span class=" flex flex-col w-full">
+                        <label for="Gender" class="text-zinc-500">Gender</label>
+                        <span class=" flex flex-col border border-zinc-300 pr-[5em] pl-3 py-2 rounded">
+                            <select name="Gender" id="gender" class="w-[8em] outline-none text-zinc-500">
+                                <option value="Gender">Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </span>
+                    </span>
+                </div>
+                <div class="flex items-centerc gap-[9em]">
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Email</label>
+                        <input type="email" placeholder="Enter your emial.." class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="email">
+                    </span>
+                    <span class="flex flex-col w-full">
+                        <label for="name" class="text-zinc-500">Phone Number</label>
+                        <input type="tel" pattern="[0-9]+" title="Only numbers allowed" class="w-full px-3 py-2 border rounded outline-none text-zinc-500" id="phone">
+                    </span>
+                </div>
+                <div class="w-full">
+                    <span class="flex flex-col w-full">
+                        <label for="password" class="text-zinc-500">Password</label>
+                        <input type="password" placeholder="Enter the name of admin" class="w-[40%] px-3 py-2 border rounded outline-none text-zinc-500" id="password">
+                    </span>
+                 </div>
+                <div class="flex justify-end w-[100%] gap-8">
+                    <button class="text-zinc-500 bg-[#F1F1F1] py-2 px-4 rounded hover:bg-opacity-90 font-bold" id="studentCancel">
+                        Cancel
+                    </button>
+                    <button class="bg-[#F1F1F1] py-2 px-4 rounded hover:bg-opacity-90 bg-blue-600 text-white" id="addStudentBtn">
+                        Add Student
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-50 flex items-center justify-center transform scale-0 transition-all duration-150">
+    <div class="nwa bg-white p-6 rounded-lg shadow-lg text-center w-[300px]">
+      <h3 class="text-black text-lg mb-6">Are you sure you want to delete?</h3>
+      <div class="flex justify-between">
+        <button id="deleteYesBtn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Yes</button>
+        <button id="deleteNoBtn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">No</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="../functinalities/dashboard.js"></script>
+    <script src="../functinalities/studentAdd.js"></script>
+</body>
+
+</html>
